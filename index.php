@@ -8,24 +8,22 @@
 <body>
     <form>
         <input type="text" id = "d_n">
-        <button href = "#" id="sub" type="button">ENVIAR POKE</button>
+        <button href = "#" id="sub" onclick="submit_poke()" type="button">ENVIAR POKE</button>
     </form>
     <script>
-        async function submit_poke(){
+        const submit_poke = async () => {
             const url = "controller/pokemonController.php"
             let post_data = new FormData();
             let dex_num = document.getElementById("d_n").value;
             post_data.append("dex",dex_num);
-            let pokemon = "";
             let init = {
                 method: "POST",
                 body: post_data,
             };
-            Response = await fetch(url, init)
-            pokemon = await Response.json()
+            const result = await fetch(url, init);
+            let pokemon = await result.json();
             console.log(pokemon["name"]);
         }
-        document.getElementById("sub").onclick = submit_poke;
     </script>
 </body>
 </html>

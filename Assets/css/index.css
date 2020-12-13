@@ -1,0 +1,8 @@
+.pokemon-input{
+    background: red;
+    color: white;
+}
+.pokemon-input input[type = text]{
+    color: white;
+    text-align: center;
+}

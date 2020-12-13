@@ -10,24 +10,33 @@
 <body>
     <main>
         <div class = "row">
-            <div class = "pokemon-input col s12 m6 center-align" id="input">
+            <div class = "pokemon-input col s12 m4 center-align offset-m3" id="input">
                 <form id = "pokemon_form">
-                    <input type="text" id = "dexNumber">
-                    <button class = "waves-effect waves-light btn" id="sub">Search!</button>
+                    <div class = "card">
+                        <div class = "card-content red white-text">
+                            <h4 class = "center-align">National Pokedex</h4>
+                            <input type="text" class = "center-align white-text"id = "dexNumber">
+                        </div>
+                        <div class = "card-action">
+                            <button class = "waves-effect waves-light btn red" id="sub">Search!</button>
+                        </div>
+                    
+                    </div>
                 </form>
             </div>
 
-            <div class = "pokemon-output col s12 m6 center-align" id="output">
-                <span class = "pokemon-sprite" id= "pSprite">
-                </span>
-                <span class = "pokemon-dex" id = "pDex">
-                </span>
-                <span class = "pokemon-name" id = "pName">
-                </span>
-                <span class = "pokemon-type" id = "pType1">
-                </span>
-                <span class = "pokemon-type" id = "pType2">
-                </span>
+            <div class = "pokemon-output col s12 m3 center-align" id="output">
+                <div class = "card">
+                     <div class = "card-image red" id = "pSprite">
+                        <span class = "card-title" id = "pDex"></span>
+                    </div>
+                    <div class = "card-content">
+                        <span class = "pokemon-type" id = "pType1">
+                        </span>
+                        <span class = "pokemon-type" id = "pType2">
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </main>

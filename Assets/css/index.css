@@ -1,8 +1,5 @@
-.pokemon-input{
-    background: red;
+.poke-title{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
-}
-.pokemon-input input[type = text]{
-    color: white;
-    text-align: center;
 }
